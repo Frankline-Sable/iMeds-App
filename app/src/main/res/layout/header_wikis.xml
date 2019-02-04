@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/screen_background_dark_transparent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/topicList"
+        android:id="@+id/headerTxt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:drawableStart="@drawable/fooducate"
+        android:drawableLeft="@drawable/fooducate"
+        android:drawablePadding="@dimen/activity_horizontal_margin"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:paddingTop="48dp"
+        android:paddingBottom="32dp"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:id="@+id/countView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/headerTxt"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/countView"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white"
+        android:alpha=".7"/>
+
+</RelativeLayout>

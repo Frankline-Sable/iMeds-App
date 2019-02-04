@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#55000000"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/monthOfDay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            card_view:cardElevation="1dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/dayOfMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:text="08"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/dayOfWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Fri"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/eventTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="10:45AM" />
+
+            <TextView
+                android:id="@+id/event_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/eventTime"
+                android:layout_toStartOf="@+id/eventTime"
+                android:paddingBottom="8dp"
+                android:text="Women's Cancer Screening"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:lines="1"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"/>
+
+            <TextView
+
+                android:id="@+id/events_Subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/event_Title"
+                android:layout_toLeftOf="@+id/notification_Icon"
+                android:layout_toStartOf="@+id/notification_Icon"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Women's Cancer Screening"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/notification_Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/eventTime"
+
+                android:paddingTop="5dp"
+                card_view:srcCompat="@drawable/ic_notifications_off_black_24dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/eventImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/testingthis" />
+
+            <TextView
+                android:id="@+id/notifyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:text="2 days remaining"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:drawableLeft="@drawable/ic_announcement_black_24dp"
+                android:drawablePadding="@dimen/activity_horizontal_margin"
+                android:padding="4dp"
+                android:background="@android:drawable/screen_background_dark_transparent"/>
+        </FrameLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/dateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/caption"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/venueHolder"
+            android:layout_toStartOf="@+id/venueHolder">
+
+            <AutoCompleteTextView
+                android:id="@+id/dateScheduled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:hint="Date Scheduled"
+                android:inputType="none"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Fri, 13 Oct 2017"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/venueHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/caption"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <AutoCompleteTextView
+                android:id="@+id/venue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:hint="Location(Venue)"
+                android:inputType="none"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Nairobi, Mama Ngina"
+
+                android:textAppearance="?android:textAppearanceSmall" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/venueHolder"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <AutoCompleteTextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:hint="Description (Status)"
+                android:inputType="none"
+                android:maxLines="5"
+                android:text="@string/lorem" />
+
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+</LinearLayout>

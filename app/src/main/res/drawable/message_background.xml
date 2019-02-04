@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:alpha="1"
+    android:gravity="top|left|right|center|bottom"
+    android:src="@drawable/forum_background3"
+    />

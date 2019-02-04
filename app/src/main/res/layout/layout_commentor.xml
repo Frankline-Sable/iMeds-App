@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingStart="@dimen/activity_horizontal_margin">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_reply_comment"
+        android:paddingLeft="4dp"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/cName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Commentors Name"
+            android:textColor="#512da8"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/cName"
+            android:src="@drawable/ic_account_circle_black_48dp"
+            android:tint="#d1d1d1"
+            app:civ_fill_color="#d1d1d1"/>
+
+        <TextView
+            android:id="@+id/cComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cName"
+            android:layout_toRightOf="@+id/cImage"
+            android:layout_toEndOf="@+id/cImage"
+
+            android:layout_alignBaseline="@+id/cImage"
+
+            android:text="User's comment on the particular forum feed"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/cDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:text="11/08/2017"
+            android:textSize="10sp"
+            android:layout_below="@id/cComment"
+            android:layout_marginTop="4dp"/>
+
+    </RelativeLayout>
+</FrameLayout>

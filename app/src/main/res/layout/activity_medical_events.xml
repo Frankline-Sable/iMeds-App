@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.fsdev.imeds.MedicalEvents"
+    android:background="@drawable/bg_events">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:navigationContentDescription="Go back home"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/spinnerHidden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:dropDownWidth="match_parent"
+                    android:entries="@array/months"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginLeft="64dp"
+                    android:popupBackground="#aa023845"
+                    android:theme="@style/EventsTheme.spinner"
+                    android:visibility="invisible"/>
+                <Spinner
+                    android:id="@+id/spinnerMonths"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:dropDownWidth="match_parent"
+                    android:entries="@array/months"
+                    android:layout_toRightOf="@+id/yearPicker"
+                    android:layout_below="@+id/spinnerHidden"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:popupBackground="#aa023845"
+                    android:spinnerMode="dropdown"
+                    android:theme="@style/EventsTheme.spinner" />
+
+                <Button
+                    android:id="@+id/yearPicker"
+                    android:layout_below="@+id/spinnerHidden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="launchYearPicker"
+                    android:text="2017"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    style="@style/Widget.AppCompat.Button"
+                    android:background="@drawable/bg_date_button"/>
+
+
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_medical_events" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,21 @@
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item>
+    <shape
+        android:shape="rectangle">
+
+
+        <corners
+            android:topLeftRadius="30dp"
+            android:bottomLeftRadius="30dp"
+            android:topRightRadius="30dp"
+            android:bottomRightRadius="30dp"/>
+        <stroke
+            android:color="@android:drawable/screen_background_dark_transparent"
+            android:width="3dp"
+            />
+    </shape>
+</item>
+
+</selector>

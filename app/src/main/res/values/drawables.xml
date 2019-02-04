@@ -1,0 +1,15 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_camera" type="drawable">@android:drawable/ic_menu_camera</item>
+    <item name="ic_menu_gallery" type="drawable">@android:drawable/ic_menu_gallery</item>
+    <item name="ic_menu_slideshow" type="drawable">@android:drawable/ic_menu_slideshow</item>
+    <item name="ic_menu_manage" type="drawable">@android:drawable/ic_menu_manage</item>
+    <item name="ic_menu_share" type="drawable">@android:drawable/ic_menu_share</item>
+    <item name="ic_menu_send" type="drawable">@android:drawable/ic_menu_send</item>
+
+    <item name="icon_nutrition" type="drawable">@drawable/fooducate</item>
+    <item name="icon_lifecycle" type="drawable">@drawable/fooducate</item>
+    <item name="icon_aids" type="drawable">@drawable/fooducate</item>
+    <item name="icon_exercise" type="drawable">@drawable/fooducate</item>
+    <item name="icon_mental_state" type="drawable">@drawable/fooducate</item>
+    <item name="icon_more_stacks" type="drawable">@drawable/fooducate</item>
+</resources>

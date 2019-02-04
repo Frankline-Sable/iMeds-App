@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stt2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.fsdev.imeds.AccountManager"
+    tools:showIn="@layout/activity_account_manager">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@null"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_settingsmain">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/titleCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:cardBackgroundColor="@null"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boss_components_gradient"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="10dp"
+                    android:textColor="@android:color/white"
+                    android:paddingTop="10dp"
+                    android:text="EDIT YOUR ACCOUNT"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            </android.support.v7.widget.CardView>
+
+            <GridLayout
+                android:id="@+id/itemsView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleCard"
+                android:columnCount="2"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_margin="1dp"
+                    android:layout_row="0"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FIRST NAME " />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/firstNameField"
+                    style="@style/Widget.AppCompat.AutoCompleteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_row="0"
+                    android:enabled="false"
+                    android:fontFamily="serif-monospace"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLines="1"
+                    android:text="First Name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:typeface="serif" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_margin="1dp"
+                    android:layout_row="1"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LAST NAME " />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/lastNameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_row="1"
+                    android:enabled="false"
+                    android:fontFamily="serif-monospace"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLines="1"
+                    android:text="Last Name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:typeface="serif" />
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_margin="1dp"
+                    android:layout_row="2"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PASSWORD " />
+                </android.support.v7.widget.CardView>
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/passField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_row="2"
+                    android:enabled="false"
+                    android:fontFamily="serif-monospace"
+                    android:hint="Account Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:typeface="serif" />
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_margin="1dp"
+                    android:layout_row="3"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GENDER " />
+                </android.support.v7.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_row="3">
+
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkedButton="@+id/maleRadio"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/maleRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:enabled="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:typeface="serif" />
+
+                        <RadioButton
+                            android:id="@+id/femaleRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:text="Female"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:typeface="serif" />
+
+                    </RadioGroup>
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/genderField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/radioGroup"
+                        android:layout_alignLeft="@+id/radioGroup"
+                        android:layout_alignRight="@+id/radioGroup"
+                        android:layout_alignStart="@+id/radioGroup"
+                        android:layout_gravity="fill_horizontal"
+                        android:enabled="false"
+                        android:inputType="textCapWords|textAutoComplete|textAutoCorrect"
+                        android:maxLines="1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                </RelativeLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_margin="1dp"
+                    android:layout_row="4"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EMAIL " />
+                </android.support.v7.widget.CardView>
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/emailField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_row="4"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:fontFamily="serif-monospace"
+                    android:inputType="textNoSuggestions|textEmailAddress"
+                    android:maxLines="1"
+                    android:text="Username Address"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:typeface="serif" />
+
+                <android.support.v7.widget.CardView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_margin="1dp"
+                    android:layout_row="5"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AGE " />
+                </android.support.v7.widget.CardView>
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/ageField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_row="5"
+                    android:enabled="false"
+                    android:fontFamily="serif-monospace"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:text="00"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            </GridLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonsView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemsView"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_settings_background"
+                    android:text="Save"
+                    android:drawableRight="@drawable/ic_save_black_24dp"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:paddingRight="8dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:background="@drawable/bg_settings_background"
+                    android:text="Help"
+                    android:drawableRight="@drawable/ic_help_outline_black_24dp"
+                    android:paddingRight="8dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ec407a</color>
+    <color name="colorPrimaryDark">#c51162</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="accent_color_feeds">#617e8c</color>
+
+    <!--Events color palette-->
+    <color name="dark_primary_color_ev">#0288d1</color>
+    <color name="primary_color_ev">#03a9f4</color>
+    <color name="light_primary_color_ev">#b3e5fc</color>
+    <color name="text_icons_ev">#ffffff</color>
+    <color name="accent_color_ev">#5c6bc0</color>
+    <color name="primary_text_ev">#212121</color>
+    <color name="secondary_text_ev">#767676</color>
+    <color name="divider_color_ev">#bdbdbd</color>
+
+    <!--Settings color palette-->
+    <color name="dark_primary_color_stt">#616161</color>
+    <color name="primary_color_stt">#9e9e9e</color>
+    <color name="light_primary_color_stt">#cfd5d7</color>
+    <color name="text_icons_stt">#ffffff</color>
+    <color name="accent_color_stt">#8d6e63</color>
+    <color name="primary_text_stt">#212121</color>
+    <color name="secondary_text_stt">#767676</color>
+    <color name="divider_color_stt">#bdbdbd</color>
+
+    <!--finder menu color palette-->
+    <color name="dark_primary_color_fdr">#5c6bc0</color>
+    <color name="primary_color_fdr">#7986cb</color>
+    <color name="light_primary_color_fdr">#cfd5d7</color>
+    <color name="text_icons_fdr">#ffffff</color>
+    <color name="accent_color_fdr">#9fa8da</color>
+    <color name="primary_text_fdr">#212121</color>
+    <color name="secondary_text_fdr">#767676</color>
+    <color name="divider_color_fdr">#bdbdbd</color>
+
+
+    <color name="event_dialog">@color/colorPrimary_fv</color>
+    <color name="colorPrimary_fv">#900c3f</color>
+    <color name="colorPrimaryDark_fv">#760a33</color>
+    <color name="colorAccent_fv">#ff5733</color>
+    <color name="colorButton_fv">#a30441</color>
+    <color name="nav_back">#505050</color>
+    <color name="nav_item_back">#666666</color>
+    <color name="accent_dark">#ffffff</color>
+    <color name="accent_tint">#1E90FF</color>
+    <color name="boss_grad_color">#CD607E</color>
+    <color name="app_accent1">#009399</color>
+    <color name="front_back">#C70039</color>
+    <color name="background_front">#d4125d</color>
+    <color name="time">#999999</color>
+    <color name="subtitle">#222222</color>
+    <color name="tertiary_tint">#008f95</color>
+
+
+    <!--Material Menu Colors-->
+    <color name="menu1">#03a9f4</color>
+    <color name="menu2">#607d8b</color>
+    <color name="menu3">#455a64</color>
+    <color name="menu4">#673ab7</color>
+    <color name="menu5">#ff8a65</color>
+    <color name="menu6">#009688</color>
+    <color name="menu7">#795548</color>
+    <color name="menu8">#AF9483</color>
+    <color name="menu9">#838487</color>
+    <color name="primary_text_material_dark">#ffffff</color>
+    <color name="primary_text_material_light">#ffffff</color>
+
+    <!--W3 Schools Pales-->
+    <color name="pale_red">#ffdddd</color>
+    <color name="pale_green">#ddffdd</color>
+    <color name="pale_blue">#ddffff</color>
+    <color name="pale_yellow">#ffffcc</color>
+</resources>

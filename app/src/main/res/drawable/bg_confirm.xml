@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/color/btn_colored_background_tint.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <item>
+       <shape
+           android:shape="rectangle">
+
+
+           <corners
+               android:radius="50px" />
+           <stroke
+               android:color="@android:drawable/screen_background_light_transparent"
+               android:width="3dp"
+               />
+       </shape>
+   </item>
+
+</selector>
+

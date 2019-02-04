@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <start>
+        <element name="LinearLayout">
+            <attribute name="app:layout_behavior"/>
+            <attribute name="android:layout_height">
+                <data type="NCName"/>
+            </attribute>
+            <attribute name="android:layout_marginBottom"/>
+            <attribute name="android:layout_marginLeft"/>
+            <attribute name="android:layout_marginRight"/>
+            <attribute name="android:layout_marginTop"/>
+            <attribute name="android:layout_width">
+                <data type="NCName"/>
+            </attribute>
+            <attribute name="android:orientation">
+                <data type="NCName"/>
+            </attribute>
+            <attribute name="tools:context">
+                <data type="NCName"/>
+            </attribute>
+            <attribute name="tools:showIn"/>
+            <element name="fragment">
+                <attribute name="android:id"/>
+                <attribute name="android:layout_height">
+                    <data type="NCName"/>
+                </attribute>
+                <attribute name="android:layout_weight">
+                    <data type="integer"/>
+                </attribute>
+                <attribute name="android:layout_width">
+                    <data type="NMTOKEN"/>
+                </attribute>
+                <attribute name="android:name">
+                    <data type="NCName"/>
+                </attribute>
+                <attribute name="tools:layout"/>
+            </element>
+            <element name="FrameLayout">
+                <attribute name="android:id"/>
+                <attribute name="android:layout_height">
+                    <data type="NCName"/>
+                </attribute>
+                <attribute name="android:layout_weight">
+                    <data type="integer"/>
+                </attribute>
+                <attribute name="android:layout_width">
+                    <data type="NMTOKEN"/>
+                </attribute>
+                <attribute name="android:name">
+                    <data type="NCName"/>
+                </attribute>
+            </element>
+        </element>
+    </start>
+</grammar>

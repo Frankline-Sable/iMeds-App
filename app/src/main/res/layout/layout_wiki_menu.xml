@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:columnCount="3"
+    android:background="@color/black_overlay"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Screenshot"
+        android:textColor="@android:color/white"
+        android:padding="4dp"
+        android:drawableTop="@drawable/ic_camera_black_24dp"
+        android:layout_row="0"
+        android:layout_column="0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="fill_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Night"
+        android:textColor="@android:color/white"
+        android:padding="4dp"
+        android:drawableTop="@drawable/ic_brightness_4_black_24dp"
+        android:layout_row="0"
+        android:layout_column="1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textColor="@android:color/white"
+        android:padding="4dp"
+        android:drawableTop="@drawable/ic_settings_black_24dp2"
+        android:layout_row="0"
+        android:layout_column="2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Share With"
+        android:textColor="@android:color/white"
+        android:padding="4dp"
+        android:drawableTop="@drawable/ic_share_black_24dp"
+        android:layout_row="1"
+        android:layout_column="0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="fill_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Feedback"
+        android:textColor="@android:color/white"
+        android:padding="4dp"
+        android:drawableTop="@drawable/ic_feedback_black_24dp"
+        android:layout_row="1"
+        android:layout_column="1" />
+
+
+
+</GridLayout>

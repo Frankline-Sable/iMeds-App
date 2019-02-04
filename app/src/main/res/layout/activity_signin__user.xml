@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context="com.fsdev.imeds.Signin_User">
+
+    <View
+        android:id="@+id/hiddenView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:alpha="0.6"
+        android:background="@android:color/black" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_login_form">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="172dp"
+                android:layout_height="172dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="Imeds logo"
+                android:src="@drawable/imeds_logo" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="24dp"
+                android:background="#00000000"
+                android:editable="false"
+                android:fontFamily="serif-monospace"
+                android:inputType="none"
+                android:text="iMeds"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:drawable/screen_background_light_transparent"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:id="@+id/welcomeMessage"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:text="Welcome to imeds, sign in below to finish"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/emailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/welcomeMessage"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                <AutoCompleteTextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_email_black_24dp"
+                    android:fontFamily="monospace"
+                    android:hint="Enter Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="#cccccc"
+                    android:textSize="20sp"
+                    android:typeface="serif" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/passLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/emailLayout"
+                android:layout_alignLeft="@+id/emailLayout"
+                android:layout_alignRight="@+id/emailLayout"
+                android:layout_alignStart="@+id/emailLayout"
+                android:layout_below="@+id/emailLayout"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-smallcaps">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+                    android:ems="10"
+                    android:fontFamily="monospace"
+                    android:hint="Enter Password"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#cccccc"
+                    android:textSize="20sp"
+                    android:typeface="serif" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/email_sign_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/passLayout"
+                android:layout_alignLeft="@+id/passLayout"
+                android:layout_alignRight="@+id/passLayout"
+                android:layout_alignStart="@+id/passLayout"
+                android:layout_below="@+id/passLayout"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_confirm_btn"
+                android:text="Sign in"
+                android:onClick="userExecLogin"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/btnreg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_sign_in_button"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="monospace"
+                android:onClick="launchSignup"
+                android:padding="16dp"
+                android:text="@string/registerGuide"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/btnreg"
+                android:layout_marginTop="64dp"
+                android:alpha="0.7"
+                android:onClick="launchRecovery"
+                android:padding="8dp"
+                android:text="Forgot Password? Recover"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

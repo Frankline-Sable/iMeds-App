@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context="com.fsdev.imeds.Fragment_ForumList">
+
+<ListView
+    android:id="@+id/forumListView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:scrollbars="none"
+    tools:listheader="@layout/forum_list_header"
+    tools:listitem="@layout/layout_forum">
+
+</ListView>
+
+<TextView
+    android:id="@+id/emptyView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:text="Sorry there are no forum posts"
+    android:textAppearance="?android:textAppearanceMedium" />
+
+<LinearLayout
+    android:id="@+id/forumLoader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Loading posts..." />
+
+</LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+

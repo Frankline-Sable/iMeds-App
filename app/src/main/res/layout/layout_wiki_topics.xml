@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/topicsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="3dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@android:color/transparent"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_topic_list">
+
+            <TextView
+                android:id="@+id/topicTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/topicCount"
+                android:layout_toStartOf="@+id/topicCount"
+                android:drawableLeft="@drawable/mental_state1"
+                android:drawablePadding="4dp"
+                android:drawableStart="@drawable/mental_state1"
+                android:ellipsize="end"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Nutrition and health information"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="30sp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/topicCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/nextNavigation"
+                android:background="@drawable/bg_wiki_1"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:padding="4dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_alignParentTop="true"
+                android:text="0"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/nextNavigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="false"
+                android:contentDescription="nextNavigation tab"
+                app:srcCompat="@drawable/ic_chevron_right_black_24dp" />
+
+            <TextView
+                android:id="@+id/subInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Last Viewed on 11/2/2018"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/topicTitle"
+                android:layout_marginTop="@dimen/activity_vertical_margin"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

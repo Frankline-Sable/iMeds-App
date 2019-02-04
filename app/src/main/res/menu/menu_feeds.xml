@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fsdev.imeds.MedicalFeeds">
+    <item android:title="Sort by">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/sortTitle"
+                    android:icon="@drawable/autograph_52px"
+                    android:title="By title" />
+                <item
+                    android:id="@+id/sortDate"
+                    android:checked="true"
+                    android:icon="@drawable/calendar_48px"
+                    android:title="Sort by date" />
+                <item
+                    android:id="@+id/sortStatus"
+                    android:icon="@drawable/unknown_status_64px"
+                    android:title="sort by status" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:icon="@drawable/ic_search_black_24dp"
+        android:id="@+id/action_search"
+        android:title="Search"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browsing Wiki</title>
+    <link rel="stylesheet" href="styles/w3.css">
+    <style>
+	footer{
+	    text-align: center;
+	}
+
+	@font-face{
+		font-family:"Gotham";
+		src: url(fonts/Gotham Light.ttf) format("opentype");
+	}
+	@font-face{
+		font-family:"Caecillia";
+		src: url(fonts/Caecillia.ttf) format("opentype");
+	}
+	html, body{
+		color: #777;
+		font-family:Caecillia;
+	}
+	h1,h2,h3,h4,h5,h6{
+
+	}
+	.ul{
+			list-style-type: decimal;
+		}
+
+	.loader {
+  border: 16px solid transparent;
+  border-radius: 50%;
+  border-top: 16px solid #7986cb;
+  border-bottom: 16px solid #7986cb;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+		@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+    </style>
+</head>
+<body id="body">
+<header class="w3-container">
+    <h1 class="w3-text-blue-gray" style="margin-top: 16px"><span id="wikiTitle"></span></h1>
+</header>
+
+<article class="w3-container w3-panel" style="border-left: 7px solid #5c6bc0">
+
+    <div id="wikiDescription" class="w3-large">
+        <div class="loader"></div>
+        <h4 style="color: crimson">Loading wiki data...</h4>
+    </div>
+
+</article>
+
+<div class="w3-container w3-padding-large w3-margin-bottom">
+    <span class="w3-tag w3-large w3-indigo"><a href="http://g.com" style="text-decoration: none">T</a></span>
+    <span class="w3-tag w3-large w3-pink"><a href="#" style="text-decoration: none">O</a></span>
+    <span class="w3-tag w3-large w3-cyan"><a href="#" style="text-decoration: none">P</a></span>
+    <span class="w3-tag w3-large"><a href="#" style="text-decoration: none">&uarr;</a></span>
+</div>
+
+<footer class="w3-container">
+    <button onClick="window.wiki.messageToReturn('Halo world');"
+            class="w3-tag w3-teal w3-border w3-border-white w3-left-align" id="meta">More Stuffs
+    </button>
+    <h5>&copy; iMeds 2017</h5>
+</footer>
+
+</body>
+
+<script type="text/javascript">
+	var x=document.getElementById("wikiTitle");
+	var y=document.getElementById("wikiDescription");
+	var z=document.getElementById("meta");
+
+
+	var bodyStyle=["w3-pale-blue", "w3-pale-green", "w3-pale-red", "w3-pale-yellow"];
+	var body=document.body.className=bodyStyle[Math.floor(Math.random() * bodyStyle.length)];
+
+	function updateWiki(title,body,meta){
+	x.innerHTML=title;
+	y.innerHTML=body;
+	z.innerHTML=meta;
+		
+	}
+</script>
+</html>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    tools:context="com.fsdev.imeds.Welcome_Splash"
+
+    >
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/appIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/appNameId"
+        android:textColor="#ec407a"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="64dp"
+        />
+
+    <ImageSwitcher
+        android:id="@+id/tinySplashImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dummy_icon"
+        android:layout_below="@+id/appIntro"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/icareText"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/introText"
+        android:textColor="@android:color/white"
+        android:fontFamily="serif-monospace"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/versionText"
+        android:layout_marginBottom="16px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:textColor="@android:color/white"
+        android:id="@+id/versionText"
+        android:text="Version: 05.10.17"
+        android:alpha=".5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

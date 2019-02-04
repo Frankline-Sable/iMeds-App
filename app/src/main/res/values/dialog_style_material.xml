@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MaterialDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+    <item name="colorAccent">@color/colorPrimary_fv</item>
+    <item name="android:textColorPrimary">@android:color/white</item>
+    <item name="android:windowBackground">@color/app_accent1</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:tint">@color/colorPrimary_fv</item>
+</style>
+
+    <style name="MaterialDialogStyleLaunchScreen" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+        <item name="colorAccent">@color/app_accent1</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:windowBackground">@color/colorPrimary_fv</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:tint">@color/app_accent1</item>
+    </style>
+
+    <style name="MaterialEventDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+        <item name="colorAccent">@android:color/holo_orange_dark</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:windowBackground">@color/event_dialog</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:tint">@android:color/holo_blue_dark</item>
+    </style>
+</resources>
